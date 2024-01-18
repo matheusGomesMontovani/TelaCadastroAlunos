@@ -19,4 +19,11 @@ function result() {
     console.log('Resultado: ' + resultado);
 };*/
 
+function confirn() {
+    var name = <HTMLInputElement>document.getElementById('Name');
+    var lastName = <HTMLInputElement>document.getElementById('Last_Name');
+    var birthday = <HTMLInputElement>document.getElementById('Birthday');
+    var Course = <HTMLInputElement>document.getElementById('Course');
+};
+
 
