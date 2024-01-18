@@ -19,11 +19,24 @@ function result() {
     console.log('Resultado: ' + resultado);
 };*/
 
+function dataBaseFilled(name:string, lastName:string, birthday:Date, course:string) {
+    if (name == '' || lastName == '' || birthday == null || course == '') {
+        alert('Name is empty\nLast name is empty\nBirthday is empty\nCourse is empty');
+    } else {
+        alert('Name: ' + name + '\n' +
+        'Last name: ' + lastName + '\n' +
+        'Birthday: ' + birthday + '\n' +
+        'Course: '  + course);
+    }
+};
+
 function confirn() {
-    var name = <HTMLInputElement>document.getElementById('Name');
-    var lastName = <HTMLInputElement>document.getElementById('Last_Name');
-    var birthday = <HTMLInputElement>document.getElementById('Birthday');
-    var Course = <HTMLInputElement>document.getElementById('Course');
+    var name = (<HTMLInputElement>document.getElementById('Name')).value;
+    var lastName = (<HTMLInputElement>document.getElementById('Last_Name')).value;
+    var birthday = new Date((<HTMLInputElement>document.getElementById('Birthday')).value);
+    var course = (<HTMLInputElement>document.getElementById('Course')).value;
+
+    dataBaseFilled(name, lastName, birthday, course);
 };
 
 
