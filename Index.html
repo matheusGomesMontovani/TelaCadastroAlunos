@@ -9,32 +9,43 @@
 </head>
 <body>
     <form action="" id="form">
-        <h1>Welcome Student</h1>
+        <div id="cadastro">
+            <h1>Welcome Student</h1>
 
-        <label for="Id">Id</label>
-        <input type="text" id="Id" name="Id">
-
-        <label for="Name">Name</label>
-        <input type="text" id="Name" name="Name">
-
-        <label for="Last_Name">Last Name</label>
-        <input type="text" id="Last_Name" name="Last_Name">
-
-        <label for="Birthday">Birthday</label>
-        <input type="datetime-local" id="Birthday" name="Birthday">
-
-        <label for="Course">Course</label>
-        <select name="Course" id="Course">
-            <option value=""></option>
-            <option>Science Computer</option>
-            <option>Computer Engineering</option>
-            <option>Mecanic Engineering</option>
-            <option>Eletric Engineering</option>
-            <option>Civil Engineering</option>
-        </select>
-
-        <button type="button" id="ButtonConfirn" onclick="confirn()">Confirn</button>
-    </form>
-        
+            <div>
+                <label for="Id">Id</label><br>
+                <input type="text" id="Id" name="Id">
+            </div>
+    
+            <div>
+                <label for="Name">Name</label><br>
+                <input type="text" id="Name" name="Name">
+            </div>
+    
+            <div>
+                <label for="Last_Name">Last Name</label><br>
+                <input type="text" id="Last_Name" name="Last_Name">
+            </div>
+    
+            <div>
+                <label for="Birthday">Birthday</label><br>
+                <input type="datetime-local" id="Birthday" name="Birthday">
+            </div>
+    
+            <div>
+                <label for="Course">Course</label><br>
+                <select name="Course" id="Course">
+                    <option value=""></option>
+                    <option>Science Computer</option>
+                    <option>Computer Engineering</option>
+                    <option>Mecanic Engineering</option>
+                    <option>Eletric Engineering</option>
+                    <option>Civil Engineering</option>
+                </select>
+            </div>
+    
+            <button type="button" id="ButtonConfirn" onclick="confirn()">Confirn</button>
+        </div>   
+    </form>    
 </body>
 </html>
